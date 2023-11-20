@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+}
+
+.bod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: #444444;
+  scrollbar-width: none;
+  scrollbar-color: transparent;
+}
+
+.bod .all {
+  background: #161616;
+  padding: 40px 100px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 50px black;
+          box-shadow: 0px 0px 50px black;
+  overflow: hidden;
+}
+
+.bod .all .navbar {
+  padding: 0px 0;
+}
+
+.bod .all .navbar .top {
+  padding-bottom: 20px;
+}
+
+.bod .all .navbar .top .a {
+  text-decoration: none;
+}
+
+.bod .all .navbar .top .a h1 {
+  font-family: "Righteous";
+  color: white;
+  font-size: 60px;
+}
+
+.bod .all .navbar .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding-bottom: 15px;
+}
+
+.bod .all .navbar .bottom .a {
+  text-decoration: none;
+}
+
+.bod .all .navbar .bottom .a h2 {
+  font-family: "Righteous";
+  color: white;
+  font-size: 17px;
+  background-color: black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 10px;
+  border-radius: 10px;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.bod .all .navbar .bottom .a h2:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.bod .all .over {
+  height: 50vh;
+  overflow-y: hidden;
+  overflow: scroll;
+  padding: 20px 20px;
+}
+
+.bod .all .over .box {
+  padding-top: 10px;
+  overflow: scroll;
+}
+
+.bod .all .over .box .allin {
+  background-color: #3e3e3e;
+  padding: 10px 25px;
+  border-radius: 10px;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.bod .all .over .box .allin:hover {
+  background-color: white;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.bod .all .over .box .allin .each {
+  padding-top: 5px;
+}
+
+.bod .all .over .box .allin .each .top {
+  font-family: "Vina Sans";
+  font-size: 20px;
+  color: #06b806;
+}
+
+.bod .all .over .box .allin .each .bottom {
+  font-family: "Playpen Sans";
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.bod .all .over .box .allin .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  gap: 1rem;
+}
+
+.bod .all .over .box .allin .btns .del {
+  background-color: transparent;
+  border: none;
+}
+
+.bod .all .over .box .allin .btns .del .btnn {
+  font-size: 18px;
+  color: red;
+  cursor: pointer;
+}
+
+.bod .all .over .box .allin .btns .edit {
+  font-size: 18px;
+  color: #697615;
+  cursor: pointer;
+}
+
+.bod .all .pac form {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+}
+
+.bod .all .pac form input {
+  padding: 15px 0;
+  outline: none;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+}
+
+.bod .all .pac form button {
+  padding: 10px 5px;
+  background-color: white;
+  border: none;
+  font-family: "Righteous";
+  border-radius: 4px;
+}
+
+.bod .all .pac form button:hover {
+  background-color: #08a908;
+  color: white;
+  -webkit-box-shadow: 0px 0px 3px #7a7878;
+          box-shadow: 0px 0px 3px #7a7878;
+}
+
+@media screen and (max-width: 720px) {
+  .bod .all {
+    padding: 40px 120px;
+  }
+  .bod .all .navbar .top {
+    padding-bottom: 20px;
+  }
+  .bod .all .navbar .top .a {
+    text-decoration: none;
+  }
+  .bod .all .navbar .top .a h1 {
+    font-family: "Righteous";
+    color: white;
+    font-size: 40px;
+    text-align: center;
+  }
+  .bod .all .navbar .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 20px;
+  }
+  .bod .all .over {
+    height: 50vh;
+    padding: 20px 0px;
+  }
+  .bod .all .pac form {
+    padding: 30px 0;
+    gap: 0.5rem;
+  }
+  .bod .all .pac form input {
+    padding: 15px 0;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+  }
+  .bod .all .pac form button {
+    padding: 10px 5px;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  .bod .all {
+    padding: 40px 100px;
+  }
+  .bod .all .navbar .top {
+    padding-bottom: 20px;
+  }
+  .bod .all .navbar .top .a {
+    text-decoration: none;
+  }
+  .bod .all .navbar .top .a h1 {
+    font-family: "Righteous";
+    color: white;
+    font-size: 40px;
+  }
+  .bod .all .over {
+    height: 50vh;
+    padding: 20px 0px;
+  }
+  .bod .all .pac form {
+    padding: 30px 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1, 1fr;
+        grid-template-rows: 1, 1fr;
+    gap: 0.5rem;
+  }
+  .bod .all .pac form input {
+    padding: 15px 0;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+  }
+  .bod .all .pac form button {
+    padding: 10px 5px;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 546px) {
+  .bod .all {
+    padding: 40px 70px;
+  }
+  .bod .all .navbar .top {
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bod .all .navbar .top .a {
+    text-decoration: none;
+  }
+  .bod .all .navbar .top .a h1 {
+    font-size: 30px;
+  }
+  .bod .all .navbar .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 5px;
+  }
+  .bod .all .over {
+    padding: 10px 0px;
+  }
+  .bod .all .over .box {
+    padding-top: 10px;
+  }
+  .bod .all .over .box .allin {
+    background-color: #3e3e3e;
+    padding: 15px 15px;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+  }
+  .bod .all .over .box .allin .each {
+    padding-top: 5px;
+  }
+  .bod .all .over .box .allin .each .top {
+    font-family: "Vina Sans";
+    font-size: 17px;
+  }
+  .bod .all .over .box .allin .each .bottom {
+    font-family: "Playpen Sans";
+    font-size: 10px;
+    font-weight: 200;
+  }
+  .bod .all .over .box .allin .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    gap: 1rem;
+  }
+  .bod .all .over .box .allin .btns .del .btnn {
+    font-size: 18px;
+  }
+  .bod .all .over .box .allin .btns .edit {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bod .all {
+    padding: 40px 50px;
+  }
+  .bod .all .navbar .top {
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bod .all .navbar .top .a {
+    text-decoration: none;
+  }
+  .bod .all .navbar .top .a h1 {
+    font-size: 30px;
+  }
+  .bod .all .navbar .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 5px;
+  }
+  .bod .all .over {
+    padding: 10px 0px;
+  }
+  .bod .all .over .box {
+    padding-top: 10px;
+  }
+  .bod .all .over .box .allin {
+    background-color: #3e3e3e;
+    padding: 15px 15px;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+  }
+  .bod .all .over .box .allin .each {
+    padding-top: 5px;
+  }
+  .bod .all .over .box .allin .each .top {
+    font-family: "Vina Sans";
+    font-size: 17px;
+  }
+  .bod .all .over .box .allin .each .bottom {
+    font-family: "Playpen Sans";
+    font-size: 10px;
+    font-weight: 200;
+  }
+  .bod .all .over .box .allin .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    gap: 1rem;
+  }
+  .bod .all .over .box .allin .btns .del .btnn {
+    font-size: 18px;
+  }
+  .bod .all .over .box .allin .btns .edit {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

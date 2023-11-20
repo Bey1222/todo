@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+}
+
+.bod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(68, 68, 68);
+  scrollbar-width: none;
+  scrollbar-color: transparent;
+
+  .all {
+    background: rgb(22, 22, 22);
+    padding: 40px 100px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 50px black;
+    overflow: hidden;
+
+    .navbar {
+      padding: 0px 0;
+
+      .top {
+        padding-bottom: 20px;
+        .a {
+          text-decoration: none;
+
+          h1 {
+            font-family: "Righteous";
+            color: white;
+            font-size: 60px;
+          }
+        }
+      }
+
+      .bottom {
+        display: flex;
+        justify-content: right;
+        padding-bottom: 15px;
+        .a {
+          text-decoration: none;
+
+          h2 {
+            font-family: "Righteous";
+            color: white;
+            font-size: 17px;
+            background-color: black;
+            width: fit-content;
+            padding: 15px 10px;
+            border-radius: 10px;
+            transition: 0.4s ease-out;
+
+            &:hover {
+              background-color: white;
+              color: black;
+              transition: 0.3s ease-in;
+            }
+          }
+        }
+      }
+    }
+
+    .over {
+      height: 50vh;
+      overflow-y: hidden;
+      overflow: scroll;
+      padding: 20px 20px;
+      .box {
+        padding-top: 10px;
+
+        overflow: scroll;
+
+        .allin {
+          background-color: rgb(62, 62, 62);
+          padding: 10px 25px;
+          border-radius: 10px;
+          transition: 0.3s ease-out;
+
+          &:hover {
+            background-color: white;
+            transition: 0.3s ease-in;
+          }
+
+          .each {
+            padding-top: 5px;
+
+            .top {
+              font-family: "Vina Sans";
+              font-size: 20px;
+              color: rgb(6, 184, 6);
+            }
+
+            .bottom {
+              font-family: "Playpen Sans";
+              font-size: 12px;
+              font-weight: 200;
+            }
+          }
+
+          .btns {
+            display: flex;
+            justify-content: right;
+            gap: 1rem;
+
+            .del {
+              background-color: transparent;
+              border: none;
+              .btnn {
+                font-size: 18px;
+                color: red;
+                cursor: pointer;
+              }
+            }
+
+            .edit {
+              font-size: 18px;
+              color: rgb(105, 118, 21);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .pac {
+      form {
+        padding: 30px 0;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+
+        input {
+          padding: 15px 0;
+          outline: none;
+          text-align: center;
+          border-radius: 5px;
+          border: none;
+        }
+
+        button {
+          padding: 10px 5px;
+          background-color: white;
+          border: none;
+          font-family: "Righteous";
+          border-radius: 4px;
+
+          &:hover {
+            background-color: rgb(8, 169, 8);
+            color: white;
+            box-shadow: 0px 0px 3px rgb(122, 120, 120);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .bod {
+    .all {
+      padding: 40px 120px;
+
+      .navbar {
+        .top {
+          padding-bottom: 20px;
+          .a {
+            text-decoration: none;
+
+            h1 {
+              font-family: "Righteous";
+              color: white;
+              font-size: 40px;
+              text-align: center;
+            }
+          }
+        }
+
+        .bottom {
+          display: flex;
+          justify-content: center;
+          padding-bottom: 20px;
+        }
+      }
+
+      .over {
+        height: 50vh;
+        padding: 20px 0px;
+        .box {
+        }
+      }
+
+      .pac {
+        form {
+          padding: 30px 0;
+
+          gap: 0.5rem;
+
+          input {
+            padding: 15px 0;
+            outline: none;
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+          }
+
+          button {
+            padding: 10px 5px;
+
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 659px) {
+  .bod {
+    .all {
+      padding: 40px 100px;
+
+      .navbar {
+        .top {
+          padding-bottom: 20px;
+          .a {
+            text-decoration: none;
+
+            h1 {
+              font-family: "Righteous";
+              color: white;
+              font-size: 40px;
+            }
+          }
+        }
+      }
+
+      .over {
+        height: 50vh;
+        padding: 20px 0px;
+        .box {
+        }
+      }
+
+      .pac {
+        form {
+          padding: 30px 0;
+          display: grid;
+          grid-template-rows: 1, 1fr;
+          gap: 0.5rem;
+
+          input {
+            padding: 15px 0;
+            outline: none;
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+          }
+
+          button {
+            padding: 10px 5px;
+
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 546px) {
+  .bod {
+    .all {
+      padding: 40px 70px;
+
+      .navbar {
+        .top {
+          padding-bottom: 20px;
+          display: flex;
+          justify-content: center;
+          .a {
+            text-decoration: none;
+
+            h1 {
+              font-size: 30px;
+            }
+          }
+        }
+
+        .bottom {
+          display: flex;
+          justify-content: center;
+          padding-bottom: 5px;
+        }
+      }
+
+      .over {
+        padding: 10px 0px;
+        .box {
+          padding-top: 10px;
+
+          .allin {
+            background-color: rgb(62, 62, 62);
+            padding: 15px 15px;
+            border-radius: 10px;
+            transition: 0.3s ease-out;
+
+            .each {
+              padding-top: 5px;
+
+              .top {
+                font-family: "Vina Sans";
+                font-size: 17px;
+              }
+
+              .bottom {
+                font-family: "Playpen Sans";
+                font-size: 10px;
+                font-weight: 200;
+              }
+            }
+
+            .btns {
+              display: flex;
+              justify-content: right;
+              gap: 1rem;
+
+              .del {
+                .btnn {
+                  font-size: 18px;
+                }
+              }
+
+              .edit {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bod {
+    .all {
+      padding: 40px 50px;
+
+      .navbar {
+        .top {
+          padding-bottom: 20px;
+          display: flex;
+          justify-content: center;
+          .a {
+            text-decoration: none;
+
+            h1 {
+              font-size: 30px;
+            }
+          }
+        }
+
+        .bottom {
+          display: flex;
+          justify-content: center;
+          padding-bottom: 5px;
+        }
+      }
+
+      .over {
+        padding: 10px 0px;
+        .box {
+          padding-top: 10px;
+
+          .allin {
+            background-color: rgb(62, 62, 62);
+            padding: 15px 15px;
+            border-radius: 10px;
+            transition: 0.3s ease-out;
+
+            .each {
+              padding-top: 5px;
+
+              .top {
+                font-family: "Vina Sans";
+                font-size: 17px;
+              }
+
+              .bottom {
+                font-family: "Playpen Sans";
+                font-size: 10px;
+                font-weight: 200;
+              }
+            }
+
+            .btns {
+              display: flex;
+              justify-content: right;
+              gap: 1rem;
+
+              .del {
+                .btnn {
+                  font-size: 18px;
+                }
+              }
+
+              .edit {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
