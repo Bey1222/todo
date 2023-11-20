@@ -2,6 +2,7 @@
   "name": "todo",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://eu-central-1.aws.data.mongodb-api.com/app/data-jfonh/endpoint/data/v1",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
