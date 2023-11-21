@@ -1,5 +1,3 @@
-"use client";
-
 import { LuBellMinus } from "react-icons/lu";
 
 import { useRouter } from "next/navigation";

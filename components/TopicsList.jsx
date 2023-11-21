@@ -1,29 +1,49 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+
 import RemoveBtn from "./RemoveBtn";
 import { MdEdit } from "react-icons/md";
+import { useState, useEffect } from "react";
 
 const getTopics = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/topics", {
-      cache: "no-store",
-    });
+    const res = await fetch(
+      "https://eu-central-1.aws.data.mongodb-api.com/app/data-jfonh/endpoint/data/v1",
+      {
+        cache: "no-store",
+      }
+    );
 
-    if (!res.ok) {
-      throw new Error("Failed to fetch topics");
-    }
-
-    return res.json();
+    const data = await res.json();
+    return data; // Ensure 'data' contains the 'topics' property
   } catch (error) {
-    console.log("Error loading topics: ", error);
+    console.error("Error loading topics:", error);
+    throw error;
   }
 };
 
-export default async function TopicsList({ t }) {
-  const { topics } = await getTopics();
-  const { id = "", title = "", description = "" } = t || {};
+getTopics();
+
+export default function TopicsList() {
+  const [topics, setTopics] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await getTopics();
+        setTopics(data.topics || []);
+      } catch (error) {
+        console.error("Error loading topics:", error);
+      }
+    };
+
+    fetchData();
+  }, []); // Empty dependency array ensures it runs only once on mount
+
+  if (!topics.length) {
+    return <p>No topics available.</p>;
+  }
 
   return (
     <>
